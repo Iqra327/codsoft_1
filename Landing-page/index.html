@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+     <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Landing-page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="page.css">
+  </head>
+  <body>
+    <!----Navbar---->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold ms-5 ps-5" href="#">PathSoft</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active text-primary me-2" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-2" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories <i class="fa-solid fa-angle-down me-2" style="color: #699df7;"></i>
+          </a>
+          <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Mobile & Tablets</a></li>
+            <li><a class="dropdown-item" href="#">Cameras</a></li>
+            <li><a class="dropdown-item" href="#">Kitchen</a></li>
+            <li><a class="dropdown-item" href="#">Computer</a></li>
+            <li><a class="dropdown-item" href="#">Home</a></li>
+            <li><a class="dropdown-item" href="#">Watch</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropleft">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Online store <i class="fa-solid fa-angle-down me-2" style="color: #699df7;"></i>
+          </a>
+          <ul class="dropdown-menu border-0 shadow-sm mega-menu ms-5 " aria-labelledby="navbarDropdownMenuLink">
+            <div class="row">
+              <div class="col-3 ps-5 pt-3">
+                <li><a class="dropdown-item fw-bold pb-3" href="#">Shop layouts</a></li>
+                <li><a class="dropdown-item" href="#">Shop fullwidth</a></li>
+                <li><a class="dropdown-item" href="#">Shop left sidebar</a></li>
+                <li><a class="dropdown-item" href="#">Shop right sidebar</a></li>
+              </div>
+              <div class="col-3 p-3">
+                <li><a class="dropdown-item fw-bold pb-3" href="#">Product pages</a></li>
+                <li><a class="dropdown-item" href="#">Single Product</a></li>
+                <li><a class="dropdown-item" href="#">Variable Product</a></li>
+                <li><a class="dropdown-item" href="#">Group Product</a></li>
+                <li><a class="dropdown-item" href="#">Affiliate Product</a></li>
+              </div>
+              <div class="col-3 p-3">
+                <li><a class="dropdown-item fw-bold pb-3" href="#">Product Styles</a></li>
+                <li><a class="dropdown-item" href="#">Product Grid Style 1</a></li>
+                <li><a class="dropdown-item" href="#">Product Grid Style 2</a></li>
+                <li><a class="dropdown-item" href="#">Product Grid Style 3</a></li>
+                <li><a class="dropdown-item" href="#">Product Grid Style 4</a></li>
+                <li><a class="dropdown-item" href="#">Product List</a></li>
+              </div>
+              <div class="col-3 p-3">
+                <li><a class="dropdown-item fw-bold pb-3" href="#">Shop pages</a></li>
+                <li><a class="dropdown-item" href="#">Cart</a></li>
+                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                <li><a class="dropdown-item" href="#">My account</a></li>
+                <li><a class="dropdown-item" href="#">Wishlist</a></li>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages <i class="fa-solid fa-angle-down me-2" style="color: #699df7;"></i>
+          </a>
+          <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">About</a></li>
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+            <li><a class="dropdown-item" href="#">My account</a></li>
+            <li><a class="dropdown-item" href="#">Shipping Method</a></li>
+            <li><a class="dropdown-item" href="#">Payment Method</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            News <i class="fa-solid fa-angle-down me-2" style="color: #699df7;"></i>
+          </a>
+          <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">News List</a></li>
+            <li><a class="dropdown-item" href="#">News Classic</a></li>
+            <li><a class="dropdown-item" href="#">News Grid</a></li>
+            <li><a class="dropdown-item" href="#">News Left Sidebar</a></li>
+            <li><a class="dropdown-item" href="#">News Right Sidebar</a></li>
+            <li><a class="dropdown-item" href="#">News Post</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-3" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="">
+      <i class="fa-solid fa-arrow-right-to-bracket me-3"></i>
+      <i class="fa-regular fa-heart me-3"></i>
+      <i class="fa-solid fa-cart-shopping me-3"></i>
+      <i class="fa-solid fa-magnifying-glass me-5 pe-5"></i>
+    </div>
+  </div>
+</nav>
+<!--------Navbar-Completed---------->
+
+<div class="container pb-5 pt-5 mt-5">
+  <div class="row">
+    <!------first-left-side-column------->
+    <div class="col-lg-8 col-sm-12 text-center mt-4">
+      <div class="figure img-hover overflow-hidden">
+        <img src="Assets/ig1.jpg.webp" class="rounded-3 img-fluid img-hover" style="height:75vh;  object-fit: cover;" alt="img">
+      </div>
+      <div class="center-data">
+        <p class="text-primary mt-5">ENTERTAINMENT</p>
+        <h1 class="fw-bold">Entertainment for </h1>
+        <h1 class="fw-bold">your family</h1>
+        <button class="text-light border-0 rounded p-2 px-3 mt-2 btn btn-primary">Shop now <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+     </div>
+    </div>
+<!-----2nd col-first-part------>
+    <div class="col-lg-4 col-sm-12 mt-4">
+      <div class="card rounded-3 border-0" >
+          <img src="Assets/ig2.jpg.webp" class="card-img img-fluid" alt="..." style="height:35vh ; object-fit: cover;">
+        <div class="card-img-overlay ms-3">
+          <p class="text-primary mt-5">Appliances</p>
+          <h4 class="fw-bold">All for your</h4>
+          <h4 class="fw-bold">kitchen</h4>
+        <button class="border-1 rounded p-1 px-2 mt-1 small btn-hover">Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <!-----2nd col-2nd-part-completed------>
+      <div class="card rounded-3 border-0 mt-4" >
+          <img src="Assets/ig2.jpg.webp" class="card-img img-fluid mt-2" alt="..." style="height:35vh;">
+        <div class="card-img-overlay ms-3">
+          <p class="text-primary mt-5">Tech</p>
+          <h4 class="fw-bold">The best</h4>
+          <h4 class="fw-bold">deals</h4>
+        <button class="border-1 rounded p-1 px-2 mt-1 small btn-hover">Shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----- row completed------>
+  <div class="row">
+    <!-----free-delivery-col------>
+    <div class="col-lg-3 col-md-6 col-12 mt-5 d-flex">
+        <i class="fa-solid fa-truck fa-2xl bg-primary rounded-circle px-4 " style="color: #ffffff; padding-top: 40px;"></i>
+      <div class="ms-4">
+        <p class="mt-3 mb-2 pb-0 fw-bold h5">Free delivery</p>
+        <p class="text-secondary small">For all orders over $150</p>
+      </div>   
+    </div>
+    <!------goods-return-col------->
+    <div class="col-lg-3 col-md-6 col-12 mt-5 d-flex">
+      <i class="fa-solid fa-rotate-left fa-2xl bg-primary rounded-circle px-4" style="color: #ffffff; padding-top: 40px;"></i>
+    <div class="ms-4">
+      <p class="mt-3 mb-2 pb-0 fw-bold h5">14 Days Return</p>
+      <p class="text-secondary small">If goods have problems</p>
+    </div>   
+  </div>
+  <!------payment-col------>
+  <div class="col-lg-3 col-md-6 col-12 mt-5 d-flex">
+    <i class="fa-regular fa-credit-card fa-2xl bg-primary rounded-circle px-4" style="color: #ffffff; padding-top: 40px;"></i>
+    <div class="ms-4">
+      <p class="mt-3 mb-2 pb-0 fw-bold h5">Secure Payment</p>
+      <p class="text-secondary small">100% secure payment</p>
+    </div>   
+  </div>
+<!-----services/support------->
+  <div class="col-lg-3 col-md-6 col-12 mt-5 d-flex">
+    <i class="fa-solid fa-headset fa-2xl bg-primary rounded-circle px-4" style="color: #ffffff; padding-top: 40px;"></i>
+  <div class="ms-4">
+    <p class="mt-3 mb-2 pb-0 fw-bold h5">24/7 Support</p>
+    <p class="text-secondary small">Dedicated support</p>
+  </div>   
+ </div>
+</div>
+  <!----row-completed------>
+  <!------categories-shop-by------->
+  <div class="row">
+    <div class="col-12 mt-5 pt-4 text-center">
+      <p class="text-primary">
+        SHOP BY
+      </p>
+      <p class="h1 fw-bold mb-4">
+        Categories
+      </p>
+      <p class="text-secondary">
+        Visit our shop to see amazing products
+      </p>
+    </div>
+  </div>
+   <!----mobile & tablets-products-card----->
+  <div class="row ">
+    <div class="col-lg-6 col-12 mt-4">
+      <div class="card card-hover">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="Assets/c1.jpg.webp" class="img-fluid rounded-start m-4" alt="...">
+          </div>
+          <div class="col-8">
+            <div class="card-body ms-4 mt-3">
+              <h5 class="card-title fw-bold cursor-pointer mb-3">Mobile & Tablets</h5>
+              <p class="card-text cursor-pointer text-secondary">iPhone<br>
+                Samsung<br>
+                Google Pixel<br>
+                iPad Pro</p>
+              <p class="card-text text-primary small cursor-pointer"><a class="text-decoration-none">View more <i class="fa-solid fa-arrow-right" style="color: #0d6efd;"></i></a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----computer-products-card------>
+    <div class="col-lg-6 col-12 mt-4">
+      <div class="card card-hover">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="Assets/c2.jpg.webp" class="img-fluid rounded-start m-4" alt="...">
+          </div>
+          <div class="col-8">
+            <div class="card-body ms-4 mt-3">
+              <h5 class="card-title fw-bold cursor-pointer mb-3">Computers</h5>
+              <p class="card-text cursor-pointer text-secondary">Laptops & Notebooks<br>
+                Desktops<br>
+                Windows Tablet<br>
+                Transformers
+              <p class="card-text text-primary small cursor-pointer"><a class="text-decoration-none">View more <i class="fa-solid fa-arrow-right" style="color: #0d6efd;"></i></a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----home-product-card------->
+    <div class="col-lg-6 col-12 mt-4">
+      <div class="card card-hover">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="Assets/c6.jpg.webp" class="img-fluid rounded-start m-4" alt="...">
+          </div>
+          <div class="col-8">
+            <div class="card-body ms-4 mt-3">
+              <h5 class="card-title fw-bold cursor-pointer mb-3">Home</h5>
+              <p class="card-text cursor-pointer text-secondary">Steam Iron<br>
+                Home Theater<br>
+                TV & Audio<br>
+                Surveillance Systems
+              <p class="card-text text-primary small cursor-pointer"><a class="text-decoration-none">View more <i class="fa-solid fa-arrow-right" style="color: #0d6efd;"></i></a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----kitchen-product-card------>
+    <div class="col-lg-6 col-12 mt-4">
+      <div class="card card-hover">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="Assets/c4.jpg.webp" class="img-fluid rounded-start m-4" alt="...">
+          </div>
+          <div class="col-8">
+            <div class="card-body ms-4 mt-3">
+              <h5 class="card-title fw-bold cursor-pointer mb-3">Kitchen</h5>
+              <p class="card-text cursor-pointer text-secondary">Blenders & Mixers<br>
+                Juicers<br>
+                Food Processor<br>
+                Vacuum Cleaners
+              <p class="card-text text-primary small cursor-pointer"><a class="text-decoration-none">View more <i class="fa-solid fa-arrow-right" style="color: #0d6efd;"></i></a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----row-completed------->
+<div class="row">
+  <!-----Gamers-shop------>
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+    <div class="card border-0">
+      <img src="Assets/b1.jpg.webp" class="card-img" alt="...">
+      <div class="card-img-overlay text-end me-4">
+        <p class="card-text text-primary mb-0 pb-1 mt-5 pt-5 ">All for</p>
+        <p class="card-text fw-bold h4">Gamers</p>
+        <button class="border-1 rounded p-2 px-3 mt-2 small btn-hover">Shop now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+  <!------Home-products-shop------->
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+    <div class="card border-0">
+      <img src="Assets/b2.jpg.webp" class="card-img" alt="...">
+      <div class="card-img-overlay text-end mt-3 me-3">
+        <p class="card-text text-primary mb-0 pb-1">Home</p>
+        <p class="card-text fw-bold h4">Multicookers</p>
+        <button class="border-1 rounded p-2 px-3 mt-1 small btn-hover">Shop now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+   <!-----Take-photo-shop------->
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+    <div class="card border-0">
+      <img src="Assets/b3.jpg.webp" class="card-img" alt="...">
+      <div class="card-img-overlay mt-3 ms-3">
+        <p class="card-text text-primary mb-0">Take Your</p>
+        <p class="card-text fw-bold h4">Best Photo</p>
+        <button class="border-1 rounded p-2 px-3 mt-1 small btn-hover">Shop now <i class="fa-solid fa-arrow-right" ></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!------row-completed------>
+<!------Electronics-product------->
+<div class="row">
+  <div class="col-12 mt-5 pt-4 text-center">
+    <p class="text-primary">
+      AMAZING PRODUCTS
+    </p>
+    <p class="h1 fw-bold mb-4">
+      Electronics
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <!------Apple-Collection------>
+  <div class="col-lg-3 col-6 mt-5">
+    <div class="card card-hover">
+      <img src="Assets/apple-collection.jpg.webp" class="card-img-top" alt="...">
+      <div class="card-img-overlay ">
+        <div class="p-1 rounded-3 fw-bold text-danger" style="background-color: rgb(249, 215, 226); width:45px ;font-size:10px;">SALE!</div>
+      </div>
+      <div class="card-body text-center">
+        <div >
+          <i class="fa-sharp fa-solid fa-star" style="color: #c8b946;"></i>
+          <i class="fa-sharp fa-solid fa-star" style="color: #c8b946;"></i>
+          <i class="fa-sharp fa-solid fa-star" style="color: #c8b946;"></i>
+          <i class="fa-sharp fa-solid fa-star" style="color: #c8b946;"></i>
+          <i class="fa-sharp fa-solid fa-star" style="color: #c8b946;"></i>
+        </div>
+        <p class="card-text small pb-2 mb-0 pt-2">MOBILE & TABLETS, WATCH</p>
+        <p class="card-text fw-bold h5 pt-0">Apple Collection</p>
+        <p class="card-text fw-bold h5 pt-0 text-primary pb-2 ">$470.00
+          –
+          $990.00</p>
+          <button class="bg-primary border-0 text-light rounded-2 small px-3 py-2 button-card">View products </button>
+      </div>
+    </div>
+  </div>
+  <!------Apple-Watch------>
+  <div class="col-lg-3 col-6 mt-5">
+    <div class="card card-hover">
+      <img src="Assets/apple-watch.jpg.webp" class="card-img-top mb-2" alt="...">
+      <div class="card-img-overlay">
+        <div class="p-1 rounded-3 fw-bold" style="background-color: rgb(245, 243, 226); color:#c8b946; width:90px ;font-size:10px;">RECOMMENDED</div>
+      </div>
+      <div class="card-body text-center">
+        <p class="card-text small pb-0 mb-0 pt-4">WATCH</p>
+        <p class="card-text fw-bold h5 pt-2">Apple Watch</p>
+        <p class="card-text fw-bold h5 pt-0 text-primary pb-2 ">$470.00</p>
+        <button class="bg-primary border-0 text-light rounded-2 small px-3 py-2 button-card">Add to cart</button>
+      </div>
+    </div>
+  </div>
+   <!-------GoPro-cameras------->
+  <div class="col-lg-3 col-6 mt-5">
+    <div class="card card-hover">
+      <img src="Assets/gopro.jpg.webp" class="card-img-top mb-2" alt="...">
+      <div class="card-img-overlay text-danger">
+        <div class="p-1 rounded-3 fw-bold text-dark" style="background-color: rgb(233, 232, 228); width:87px ;font-size:10px;">OUT OF STOCK</div>
+      </div>
+      <div class="card-body text-center">
+        <p class="card-text small pb-0 mb-0 pt-4">CAMERAS</p>
+        <p class="card-text fw-bold h5 pt-2">GoPro</p>
+        <p class="card-text fw-bold h5 pt-0 text-primary pb-2 ">$156.00</p>
+          <button class="bg-primary border-0 text-light rounded-2 small px-3 py-2 button-card">Read more</button>
+      </div>
+    </div>
+  </div>
+  <!------GoPro-8-Black-cameras------>
+  <div class="col-lg-3 col-6 mt-5">
+    <div class="card card-hover">
+      <img src="Assets/gopro-8-black.jpg.webp" class="card-img-top mb-2" alt="...">
+      <div class="card-img-overlay text-danger">
+        <div class="p-1 rounded-3 fw-bold" style="background-color: rgb(245, 243, 226); color:#c8b946; width:90px ;font-size:10px;">RECOMMENDED</div>
+      </div>
+      <div class="card-body text-center">
+        <p class="card-text small pb-0 mb-0 pt-4">CAMERAS</p>
+        <p class="card-text fw-bold h5 pt-2">GoPro 8 Black</p>
+        <p class="card-text fw-bold h5 pt-0 text-primary pb-2 ">$390.00</p>
+          <button class="bg-primary border-0 text-light rounded-2 small px-3 py-2 button-card">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!------row-completed------->
+<!------Big-Sale-Banner------>
+<div class="row">
+  <div class="col-lg-12 col-12 mt-5">
+   <div class="card mt-4">
+      <img src="Assets/bgd.jpg" class="card-img" alt="..."style="height:42vh;">
+      <div class="card-img-overlay ms-4 mt-5">
+        <p class="card-text text-primary">SPRING</p>
+        <h2 class="card-title fw-bold text-light">Big Sale<i class="fa-solid fa-arrow-right" style="color: #fffefe;"></i></h2>
+        <button class="border-0 rounded py-2 px-4 mt-3 small bg-primary text-light">Shop now <i class="fa-solid fa-arrow-right" style="color: #fffefe;"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----row-completed------>
+<!-----Home-kitchen------>
+<div class="row">
+  <div class="col-12 mt-5 pt-4 text-center mb-5">
+    <p class="text-primary">
+      AMAZING PRODUCTS
+    </p>
+    <p class="h1 fw-bold mb-4">
+      Home & Kitchen
+    </p>
+  </div>
+</div>
+<!-------Vacuum-Cleaner-card------>
+<div class="row">
+  <div class="col-lg-3 col-6 mt-5">
+    <div class="card card-hover">
+      <img src="Assets/vacuum-cleaner.jpg.webp" class="card-img-top mb-2" alt="...">
+      <div class="card-body text-center">
+        <p class="card-text small pb-0 mb-0 pt-4">HOME</p>
+        <p class="card-text fw-bold h5 pt-2">Vacuum cleaner</p>
+        <p class="card-text fw-bold h5 pt-0 text-primary pb-2 ">$90.00</p>
+        <button class="bg-primary border-0 text-light rounded-2 small px-3 py-2 button-card">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <!-----Steamfast-kitchen-card------->
+  <div class="col-lg-3 col-6 mt-5">
+    <div class="card card-hover">
+      <img src="Assets/steamfast-sf-727.jpg.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text small pb-0 mb-0 pt-4 text-center">HOME,KITCHEN</p>
+        <p class="card-text fw-bold pt-2 px-0">Steamfast SF-727 Travel Mini S...</p>
+        <p class="card-text fw-bold h5 pt-0 text-primary pb-2 text-center">$370.00</p>
+        <button class="bg-primary border-0 text-light rounded-2 small px-3 py-2 button-card text-center">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <!------Juicer-kitchen-card------->
+  <div class="col-lg-3 col-6 mt-5">
+    <div class="card card-hover">
+      <img src="Assets/juicer.jpg.webp" class="card-img-top mb-2" alt="...">
+      <div class="card-img-overlay">
+        <div class="p-1 rounded-3 fw-bold text-danger" style="background-color: rgb(249, 215, 226); width:45px ;font-size:10px;">SALE!</div>
+      </div>
+      <div class="card-body text-center">
+        <p class="card-text small pb-0 mb-0 pt-4">KITCHEN</p>
+        <p class="card-text fw-bold h5 pt-2">Juicer</p>
+        <p class="card-text fw-bold h5 pt-0 text-primary pb-2 "><span class="text-decoration-line-through text-secondary">$135.00</span> $120.00</p>
+        <button class="bg-primary border-0 text-light rounded-2 small px-3 py-2 button-card">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <!---------Hamilton-Kitchen-card------->
+  <div class="col-lg-3 col-6 mt-5">
+    <div class="card card-hover">
+      <img src="Assets/hamilton-beach-flexbrew.jpg.webp" class="card-img-top " alt="...">
+      <div class="card-img-overlay">
+        <div class="p-1 rounded-3 fw-bold" style="background-color: rgb(245, 243, 226); color:#c8b946; width:90px ;font-size:10px;">RECOMMENDED</div>
+      </div>
+      <div class="card-body text-center">
+        <p class="card-text small pb-0 mb-0 pt-4">KITCHEN</p>
+        <p class="card-text fw-bold pt-2">Hamilton Beach FlexBrew T...</p>
+        <p class="card-text fw-bold h5 pt-0 text-primary pb-2 ">$150.00</p>
+        <button class="bg-primary border-0 text-light rounded-2 small px-3 py-2 button-card">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------row-completed--------->
+<!------Clients-review------>
+<div class="row">
+  <div class="col-12 mt-5 pt-5 text-center mb-5">
+    <p class="text-primary">
+      REVIEWS FROM OUR CLIENTS
+    </p>
+    <p class="h1 fw-bold mb-4">
+      What Clients Say
+    </p>
+  </div>
+</div>
+<!------row-done------->
+<div class="row">
+  <!------clients-review------->
+  <div class="col-12">
+    <div class="card cursor-pointer card-border">
+      <div class="card-body text-center">
+        <p class="card-text mx-5 px-5 mt-3 opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur unde, deserunt odio eveniet tempora inventore necessitatibus ducimus esse,illo cumque dignissimos optio.</p>
+        <p class="card-text fw-bold h5 mt-2">Cathrine Williams</p>
+        <p class="card-text opacity-75 mb-5">Buyer</p>
+        <div class="d-flex buyer-image">
+          <img src="Assets/t4-150x150.jpg.webp" alt="buyer-image" class="rounded-circle me-3" style="width:75px; height: 70px;">
+          <img src="Assets/t2-150x150.jpg.webp" alt="buyer-image" class="rounded-circle me-3" style="width:75px; height: 70px;">
+          <img src="Assets/t1-150x150.jpg.webp" alt="buyer-image" class="rounded-circle me-3" style="width:75px; height: 70px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-------footer-------->
+<div class="container-fluid pt-5 mt-5 text-light" style="background-color: #474848;">
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="Assets/logo-white.svg" alt="logo" class="mb-4">
+        <p class="mb-4">A universal online store for your business that is suitable for any products. Visit our shop to see amazing products.</p>
+        <i class="fa-brands fa-facebook-f border rounded-2 p-2" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram border rounded-2 p-2" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-linkedin-in border rounded-2 p-2" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-twitter border rounded-2 p-2" style="color: #ffffff;"></i>
+      </div>
+      <div class="col-lg-3">
+        <p class="fw-bold h5 mb-4">Pages</p>    
+        <p>About</p>
+        <p>Payment Method</p>
+        <p>Shipping Method</p>
+        <p>Refund and Returns Policy</p>
+      </div>
+      <div class="col-lg-3">
+        <p class="fw-bold h5 mb-4">Categories</p>
+        <p>Cameras</p>
+        <p>Mobile & Tablets</p>
+        <p>Kitchen</p>
+        <p>Computers</p>
+      </div>
+      <div class="col-lg-3 small">
+        <p class="fw-bold h5 mb-4">Store Location</p>
+        <a><i class="fa-solid fa-location-dot me-3 mb-3" style="color: #ffffff;"></i>301 S Irving Blvd Los Angeles, CA 90020</a><br>
+        <a><i class="fa-solid fa-mobile-screen-button me-3 mb-3" style="color: #ffffff;"></i>+1 323-913-4688<br>
+          +1 323-888-4554
+        </a><br>
+        <a><i class="fa-regular fa-envelope me-3 mb-3 pt-3" style="color: #ffffff;"></i>hello@example.com<br>
+          info@example.com
+        </a>
+      </div>
+    </div>
+  </div> 
+  <hr>
+  <div class="d-flex ms-5 ps-4 small py-3">
+    <p class="me-4" style="text-decoration: underline dashed; text-underline-offset: 7px;">Terms and Conditions</p>
+    <p style="text-decoration: underline dashed; text-underline-offset: 7px;">Privacy Policy</p>
+    <p class="ms-auto me-5 pe-4"><i class="fa-regular fa-copyright" style="color: #ffffff;"></i>2022 PathSoft.All rights reserved.</p>
+  </div> 
+</div>
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+  </body>
+</html>

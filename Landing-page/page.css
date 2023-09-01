@@ -1,0 +1,60 @@
+body{
+  font-family: sans-serif;
+}
+.mega-menu{
+  width: 90% !important;
+}
+.center-data{
+  position: absolute;
+  top:20%;
+  left:24%;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.button-card{
+  position:absolute;
+  left:30%;
+}
+.buyer-image{
+  position: absolute;
+  top:82%;
+  left:40%;
+}
+.btn-hover i {
+  color: #100e0e;
+  transition: color 0.3s;
+}
+.btn-hover:hover i{
+  color:rgb(255, 255, 255);
+  transition: 0.25s;
+}
+.btn-hover{
+  background: transparent;
+}
+.btn-hover:hover{
+color:white;
+background-color: black;
+transition: 0.25s;
+}
+.card-hover:hover{
+  border:none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.24s;
+}
+.img-hover :hover{
+  transform: scale(1.1);  
+}
+.img-hover{
+  transition: all 1s linear;
+}
+.card-border:hover{
+  border-color: blue;
+}
+@media only screen and (max-width: 992px){
+ .buyer-image{
+ top:89%;
+ left: 23%;
+ } 
+ 
+}
